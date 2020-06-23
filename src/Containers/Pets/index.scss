@@ -1,0 +1,31 @@
+.petsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);;
+    grid-gap: 50px;
+    justify-content: center;
+}
+.heading-wrapper {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+select {
+    width: 150px;
+    height: 40px;
+    font-size: 19px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #57b9cb;
+    color: white;
+    border: 0;
+    outline: 0
+}
+select:first-child {
+    margin-right: 20px;
+}

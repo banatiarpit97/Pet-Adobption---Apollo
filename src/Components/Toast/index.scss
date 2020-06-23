@@ -1,0 +1,26 @@
+.wrapper {
+    padding: 17px 50px;
+    background-color: green;
+    position: absolute;
+    z-index: 999;
+    right: 20px;
+    animation: toastEnter 1s linear;
+    animation-fill-mode: forwards !important;
+    box-shadow: 2px 2px 7px 0px #979797;
+}
+
+@keyframes toastEnter {
+    0% {top: -100px;}
+    100% {top: 20px}
+}
+
+@keyframes toastLeave {
+    0% {top: 20px}
+    100% {top: -100px;}
+}
+
+.text {
+    color: #fff;
+    font-size: 23px;
+    margin: 0;
+}

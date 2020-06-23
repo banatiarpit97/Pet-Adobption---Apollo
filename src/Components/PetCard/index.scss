@@ -1,0 +1,70 @@
+.petCard {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.2);
+}
+.pet-image {
+    width: 100%;
+    height: 80%;
+}
+.done-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.pet-detail-wrapper {
+    flex: 1;
+    position: relative;
+}
+.pet-detail {
+    height: 100%;
+    // background-color: #5cb85c;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+}
+.name {
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.type {
+    color: #fff;
+    margin: 0;
+}
+.weight {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+}
+.progress {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #5cb85c;
+}
+
+.animate {
+    animation: progress 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
